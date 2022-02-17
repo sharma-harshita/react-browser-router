@@ -6,6 +6,7 @@ import { Contact } from './components/Contact';
 import { Career } from './components/Career';
 import { Support } from './components/Support';
 import { Team } from './components/Team';
+import { NotFound } from './components/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/career" element={<Career/>}/>
         <Route path="/support" element={<Support/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/*" element={<NotFound/>}/>
       </Routes>
     </div>
   );
