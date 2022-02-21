@@ -7,6 +7,7 @@ import { Career } from './components/Career';
 import { Support } from './components/Support';
 import { Team } from './components/Team';
 import { NotFound } from './components/NotFound';
+import Student from './components/Student';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/career" element={<Career/>}/>
         <Route path="/support" element={<Support/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/students/:stuId" element={<Student/>}/>
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
     </div>
